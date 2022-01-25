@@ -24,11 +24,11 @@ after_success:
   - docker push tomen-coder/pfswcho_zad1:fib-calculator
 deploy:
   provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "pfswchozad1"
-  env: "pfswchozad1-env"
-  bucket_name: "elasticbeanstalk:us-east-2:539708463733"
-  bucket_path: "pfswchozad1"
+  region: "eu-north-1"
+  app: "pfswchozad-111"
+  env: "pfswchozad111-env"
+  bucket_name: "elasticbeanstalk-eu-north-1-539708463733"
+  bucket_path: "pfswchozad-111"
   on:
     branch: main
   access_key_id: $AWS_ACCESS_KEY
